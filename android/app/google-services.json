@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "884262208252",
+    "project_id": "bots360",
+    "storage_bucket": "bots360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884262208252:android:06e0c420c7bbdcc2498d79",
+        "android_client_info": {
+          "package_name": "com.example.bots360_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884262208252-a4g925i9b9u16guvig04kuvbors6to9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqdLU_FvHuBGPH4Lx-c0_1ui_yQvkNGaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884262208252-a4g925i9b9u16guvig04kuvbors6to9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
