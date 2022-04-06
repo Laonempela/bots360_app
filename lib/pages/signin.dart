@@ -29,7 +29,7 @@ class _SignInState extends State<SignIn> {
        MediaQuery.of(context).size.height * 0.2,20, 0),
         child: Column(
           children: <Widget>[
-            logoWidget("assets/images/logo.png"),
+            logoWidget("assets/images/logo2.png"),
           const SizedBox(
             height: 30,
           ),
@@ -44,11 +44,13 @@ class _SignInState extends State<SignIn> {
                 height: 20
             ),
             signInSignUpButton(context, true, (){
-              FirebaseAuth.instance.signInWithEmailAndPassword(email: _emailTextController.text, password: _passwordTextController.text).
-                  then((value) {
-                    Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const Home()));
-                  });
+    FirebaseAuth.instance.signInWithEmailAndPassword(email: _emailTextController.text, password: _passwordTextController.text).
+    then((value) {
+    Navigator.push(context,
+    MaterialPageRoute(builder: (context) => const Home()));
+    }).onError((error, stackTrace) {
+      print("Error ${error.toString()}");
+          });
             }),
             signUpOption()
           ],
@@ -56,6 +58,7 @@ class _SignInState extends State<SignIn> {
        ),
        ),
      ),
+
     );
   }
 
