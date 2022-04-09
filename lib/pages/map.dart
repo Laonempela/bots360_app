@@ -4,6 +4,8 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:bots360_app/pages/boatcruise.dart';
 import 'package:bots360_app/pages/birdwatching.dart';
+
+
 class Map extends StatefulWidget {
   const Map({Key? key}) : super(key: key);
 
@@ -15,10 +17,7 @@ class _MapState extends State<Map> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Bots 360 tourism'),
-        centerTitle: true,
-      ),
+
       body: Stack(children: <Widget>[
         FlutterMap(options: MapOptions(maxZoom: 6.0,
             center: LatLng(-21.759, 24.214)),

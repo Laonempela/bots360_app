@@ -1,6 +1,7 @@
+import 'package:bots360_app/pages/travelpages/general.dart';
 import 'package:flutter/material.dart';
 
-import '../travelpages/general.dart';
+
 class Travel extends StatefulWidget {
   const Travel({Key? key}) : super(key: key);
 
@@ -12,10 +13,6 @@ class _TravelState extends State<Travel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Bots 360 tourism'),
-        centerTitle: true,
-      ),
       body: ListView(
         children: [
           buildGeneralCard(),
@@ -56,7 +53,7 @@ class _TravelState extends State<Travel> {
             fit: BoxFit.cover,
           ),
         const Text(
-          'Getting There',
+          'General Information',
               style: TextStyle(
       fontWeight: FontWeight.bold,
   color: Colors.white,
@@ -110,7 +107,7 @@ class _TravelState extends State<Travel> {
                 fit: BoxFit.cover,
               ),
               const Text(
-                'General Information',
+                'Getting There',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../reausable_widgets/reusable_widget.dart';
+import '../widgets/reusable_widget.dart';
 import '../utils/color_utils.dart';
-import 'package:bots360_app/pages/home_page.dart';
+import 'package:bots360_app/screens/home_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class SignUpScreen extends StatefulWidget {

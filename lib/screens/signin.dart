@@ -1,8 +1,8 @@
 import 'package:bots360_app/utils/color_utils.dart';
 import 'package:flutter/material.dart';
-import '../reausable_widgets/reusable_widget.dart';
-import 'package:bots360_app/pages/SignUpScreen.dart';
-import 'package:bots360_app/pages/home_page.dart';
+import '../widgets/reusable_widget.dart';
+import 'package:bots360_app/screens/SignUpScreen.dart';
+import 'package:bots360_app/screens/home_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);

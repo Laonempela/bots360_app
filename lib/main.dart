@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bots360_app/pages/signin.dart';
+import 'package:bots360_app/screens/signin.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {

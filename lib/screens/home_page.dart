@@ -1,7 +1,10 @@
+import 'package:bots360_app/pages/travelinfo.dart';
+import 'package:bots360_app/widgets/Navigation_Drawer_Widget.dart';
 import 'package:flutter/material.dart';
 import 'package:bots360_app/pages/map.dart';
 import 'package:bots360_app/pages/gallery.dart';
-import 'act/travelinfo.dart';
+
+import '../widgets/custom_app_bar.dart';
 
 
 class Home extends StatefulWidget {
@@ -21,7 +24,8 @@ final screens = [
 ];
   @override
   Widget build(BuildContext context) => Scaffold(
-
+      drawer: const NavigationDrawerWidget(),
+      appBar: const CustomAppBar(),
         body: screens[currentIndex],
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
@@ -52,4 +56,5 @@ final screens = [
     );
 
   }
+
 
