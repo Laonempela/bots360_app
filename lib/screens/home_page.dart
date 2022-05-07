@@ -1,9 +1,10 @@
 import 'package:bots360_app/pages/travelinfo.dart';
 import 'package:bots360_app/widgets/Navigation_Drawer_Widget.dart';
 import 'package:flutter/material.dart';
-import 'package:bots360_app/pages/map.dart';
+import 'package:bots360_app/pages/locations.dart';
 import 'package:bots360_app/pages/gallery.dart';
 
+import '../models/locations_model.dart';
 import '../widgets/custom_app_bar.dart';
 
 
@@ -17,7 +18,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 int currentIndex = 0;
 final screens = [
-  const Map(),
+  const LocationsMap(),
   const Gallery(),
   const Travel(),
 
